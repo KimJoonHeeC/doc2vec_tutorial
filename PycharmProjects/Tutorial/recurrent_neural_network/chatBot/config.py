@@ -6,7 +6,7 @@ tf.app.flags.DEFINE_string("ckpt_name", "conversation.ckpt", "checkpoint filenam
 
 tf.app.flags.DEFINE_boolean("train", True, "progress learning.")
 tf.app.flags.DEFINE_boolean("test", True, "run test.")
-tf.app.flags.DEFINE_boolean("data_loop", True, "use in mini-data set experiment")
+tf.app.flags.DEFINE_boolean("data_loop", False, "use in mini-data set experiment")
 tf.app.flags.DEFINE_integer("batch_size", 100, "mini batch size")
 tf.app.flags.DEFINE_integer("epoch", 10, "# of repeated learning")
 

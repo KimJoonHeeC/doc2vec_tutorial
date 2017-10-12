@@ -28,6 +28,8 @@ def train(dialog, batch_size=100, epoch=10):
         for step in range(total_batch * epoch):
             enc_input, dec_input, targets = dialog.next_batch(batch_size)
 
+            print(len(enc_input), len(dec_input), len(targets))
+
             _, loss = model.train(sess, enc_input, dec_input, targets)
 
             if (step + 1) % 5 == 0:
